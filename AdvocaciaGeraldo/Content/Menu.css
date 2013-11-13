@@ -1,0 +1,63 @@
+﻿#cabecalho
+{
+    background-color:white;
+    width:100%;
+    height:140px;
+    margin:0 auto;
+}
+
+#logo
+{
+   margin-top:-90px;
+}
+
+#menu
+{
+    float: right;
+    font-family: 'BebasNeueRegular';
+    position: relative;
+    left:-50%;
+}
+
+#menu ul
+{
+    list-style: none;
+    margin: 0px;
+    left: 50%;
+    position: relative;
+    float: left;
+}
+
+#menu li
+{
+    float: left;
+    padding: 100px 18px 20px 18px;   
+    font-size: 21px;
+    font-weight: normal;
+}
+
+#menu li a:link, #menu li a:visited , #menu li a:active
+{
+    text-decoration: none;
+    color: black; 
+}
+
+#menu li a:hover
+{
+    text-decoration: underline;
+}
+
+#menu li.current
+{
+  background-color: #af1201;
+}
+
+#menu li.current a:link, #menu li.current a:visited, #menu li.current a:active
+{
+    color: white;
+}
+
+#menu ul li a:link, #menu ul li a:active, #menu ul li a:visited
+{
+    font-family: 'BebasNeueRegular';
+}

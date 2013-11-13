@@ -1,0 +1,39 @@
+﻿@{string ctrName = ViewContext.RouteData.Values["action"].ToString();}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>@ViewBag.Title - Geraldo Advocacia</title>
+        <link href="@Url.Content("~/Content/Menu.css")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/Footer.css")" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <div id="cabecalho">
+                <nav id="menu">
+                    <ul>
+                        <li id="logo"><a href="~/Home/Index"><img src="~/Content/image/logoteste.png" /></a></li>
+                        <li @if(ctrName == "Index"){<text>class="current"</text>}><a>@Html.ActionLink("Home","Index","Home")</a></li>
+                        <li @if(ctrName == "Atuacao"){<text>class="current"</text>}><a>@Html.ActionLink("Atuação","Atuacao","Home")</a></li>
+                        <li @if(ctrName == "Equipe"){<text>class="current"</text>}><a>@Html.ActionLink("Equipe","Equipe","Home")</a></li>
+                        <li @if(ctrName == "Processo"){<text>class="current"</text>}><a>@Html.ActionLink("Seu Processo","Processo","Home")</a></li>
+                        <li @if(ctrName == "Acordo"){<text>class="current"</text>}><a>@Html.ActionLink("Proposta de Acordo","Acordo","Home")</a></li>
+                        <li @if(ctrName == "Contato"){<text>class="current"</text>}><a>@Html.ActionLink("Contato","Contato","Home")</a></li>
+                        <div><img src="~/Content/image/separator.png" /></div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="body">
+            <div id="body1">
+            @RenderBody()
+            </div>
+        </div>
+        <footer>
+            <div id="credits">
+                Advocacia Geraldo &copy; @DateTime.Now.Year | Todos os direitos reservados | Desenvolvido by <a href="mailto:bruno.sato@live.com">Bruno Sato</a>
+            </div>
+        </footer>
+    </body>
+</html>

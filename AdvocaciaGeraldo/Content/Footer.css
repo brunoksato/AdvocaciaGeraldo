@@ -1,0 +1,19 @@
+﻿#credits 
+{
+    background:#2d2724; 
+    padding:10px; 
+    text-align:center; 
+    color:#ccc;
+    font-family :'DroidSansRegular', Verdana, Geneva, sans-serif; 
+    font-size:62.5%;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+#credits a:link
+{
+    color:white;
+    text-decoration:none !important;
+}
+    

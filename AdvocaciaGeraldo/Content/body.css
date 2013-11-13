@@ -1,0 +1,15 @@
+﻿*{
+    text-decoration:none;
+    list-style:none;
+    
+}
+
+#body1 {
+    width: 1000px; 
+    margin: 0 auto;
+}
+
+#separador
+{
+    height:50px;
+}
